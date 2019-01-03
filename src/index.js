@@ -6,6 +6,7 @@ import rootReducer from './reducers'
 import AppContainer from './AppContainer'
 import './index.css';
 
+// Redux logger
 const logger = store => next => action => {
   console.group(action.type)
   console.info('dispatching', action)
