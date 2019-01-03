@@ -1,7 +1,4 @@
-import React, { Component } from 'react';
-import HomeContainer from './screens/HomeContainer'
-import './App.css';
-
+import { setAmount, setRates, setRatesNameMap, addCurrency, deleteCurrency } from '../index';
 const ratesNameMap = {
   PHP: 'Philippine Piso',
   HUF: 'Hungarian Forint',
@@ -38,20 +35,20 @@ const ratesNameMap = {
   NOK: 'Norwegian Krone'
 };
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-  
-    this.props.setRatesNameMap(ratesNameMap)
-  }
-
-  render() {
-    return (
-      <div className="App">
-        <HomeContainer />
-      </div>
-    );
-  }
-}
-
-export default App;
+describe("actions: ", () => {
+  it('test action setAmount', () => {
+    expect(setAmount(100)).toMatchObject({ type: 'SET_AMOUNT', payload: 100 });
+  })
+  it('test action setRates', () => {
+    expect(setRates('IDR')).toMatchObject({ type: 'SET_RATES', payload: 'IDR' });
+  })
+  it('test action setRatesNameMap', () => {
+    expect(setRatesNameMap(ratesNameMap)).toMatchObject({ type: 'SET_RATES_NAME_MAP', payload: ratesNameMap });
+  })
+  it('test action addCurrency', () => {
+    expect(addCurrency('IDR')).toMatchObject({ type: 'ADD_CURRENCY', payload: 'IDR' });
+  })
+  it('test action deleteCurrency', () => {
+    expect(deleteCurrency('IDR')).toMatchObject({ type: 'DELETE_CURRENCY', payload: 'IDR' });
+  })
+});

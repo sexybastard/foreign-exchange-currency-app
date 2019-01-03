@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`reducers:  test amountReducer 1`] = `100`;
+
+exports[`reducers:  test currenciesReducer 1`] = `
+Array [
+  "IDR",
+]
+`;
+
+exports[`reducers:  test currenciesReducer 2`] = `Array []`;
+
+exports[`reducers:  test ratesNameMapReducer 1`] = `
+Object {
+  "AUD": "Australian Dollar",
+  "BGN": "Bulgarian Lev",
+  "BRL": "Brazilian Rel",
+  "CAD": "Canadian Dollar",
+  "CHF": "Swiss Franc",
+  "CNY": "Chinese Yuan",
+  "CZK": "Czech Koruna",
+  "DKK": "Danish Krone",
+  "EUR": "Euro",
+  "GBP": "Pound Sterling",
+  "HKD": "Hong Kong Dollar",
+  "HRK": "Croatian Kuna",
+  "HUF": "Hungarian Forint",
+  "IDR": "Indonesian Rupiah",
+  "ILS": "Israeli Shekel",
+  "INR": "Indian Rupee",
+  "ISK": "Icelanding Krona",
+  "JPY": "Japanese Yen",
+  "KRW": "South Korean Won",
+  "MXN": "Mexican Peso",
+  "MYR": "Malaysian Ringgit",
+  "NOK": "Norwegian Krone",
+  "NZD": "New Zealand Dollar",
+  "PHP": "Philippine Piso",
+  "PLN": "Polish Zloty",
+  "RON": "Romanian Leu",
+  "RUB": "Russian Ruble",
+  "SEK": "Swedish Krona",
+  "SGD": "Singapore Dollar",
+  "THB": "Thai Baht",
+  "TRY": "Turkish Lira",
+  "USD": "United States Dollar",
+  "ZAR": "South African Rand",
+}
+`;
+
+exports[`reducers:  test ratesReducer 1`] = `"IDR"`;

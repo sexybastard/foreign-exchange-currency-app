@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component: AddCurrency AddCurrency should match snapshoot 1`] = `
+Array [
+  <UNDEFINED>
+    <div
+      onClick={[Function]}
+      style={
+        Object {
+          "borderColor": "black",
+          "borderStyle": "solid",
+          "borderWidth": 2,
+          "display": "flex",
+          "flex": 1,
+          "paddingBottom": 8,
+          "paddingLeft": 12,
+          "paddingRight": 12,
+          "paddingTop": 8,
+        }
+      }
+    >
+      <label
+        style={
+          Object {
+            "fontWeight": "bold",
+          }
+        }
+      >
+        (+) Add More Currency
+      </label>
+    </div>
+  </UNDEFINED>,
+]
+`;
