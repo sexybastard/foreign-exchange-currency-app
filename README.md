@@ -31,3 +31,22 @@ Using ReactJs with Redux as the state management. And using jest and enzyme for 
 $ docker build -t foreign-exchange-currency-app .
 
 $ docker run -p 3000:3000 foreign-exchange-currency-app
+
+
+## Code Explanation
+
+So basically this app constructed by 1 screen (Home), which contained 3 components (AddCurrency, BaseCurrency, CurrencyList).
+
+### Home
+Contain all 3 components
+
+### BaseCurrency
+This component has its rates hardcoded to USD, initial amount is 1, then whenever the amount is changed will update redux states, 'rates', contains with all the converted rates of all currencies where the base currency is hardcoded to USD, and 'amount' where the initial value will be 1.
+
+### AddCurrency
+This component has its options hardcoded to the list that is mentioned on the document. Whenever the currency code is selected then submit, will update redux state 'currencies'
+
+### CurrencyList
+This component will retrieve the list of currencies that stored in redux state 'currencies', then renders the list of converted amount, based on base rate that also stored on redux state as 'rates'.
+
+Since redux is not define as requirement on the document, so i guess i'll explain a bit about redux. Using redux we will have 3 major part, those are action, reducer, and redux state. All activities that executed on this application, will trigger an action, then the reducer will update the redux state based on the action, and at last the components will render based on the redux state.
