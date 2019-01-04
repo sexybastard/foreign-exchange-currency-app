@@ -54,5 +54,7 @@ Since redux is not define as requirement on the document, so i guess i'll explai
 note: I've indluded the redux logger. So you can actually watch the state evolving by checking on browser inspect console. The log looks like this. SET_AMOUNT will be the action name, the next line will be the object that the action is dispatching, and the next line will be the latest redux state.
 
 SET_AMOUNT
+
 ---- dispatching {type: "SET_AMOUNT", payload: 1}
+
 ---- next state {amount: 1, currencies: Array(0), rates: {…}, ratesNameMap: {…}}
