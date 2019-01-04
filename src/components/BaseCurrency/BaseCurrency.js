@@ -51,7 +51,7 @@ class BaseCurrency extends Component {
 
   handleOnChange = (event) => {
     this.props.setAmount(event.target.value)
-    this.getRates().then(response => console.log(response))
+    this.getRates()
   };
 
   render() {

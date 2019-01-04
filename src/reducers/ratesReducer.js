@@ -1,4 +1,4 @@
-const rates = (state = [], action) => {
+const rates = (state = {}, action) => {
   switch (action.type) {
     case 'SET_RATES':
       return action.payload

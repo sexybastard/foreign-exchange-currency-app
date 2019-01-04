@@ -96,7 +96,7 @@ class CurrencyList extends Component {
     };
 
     return (
-      currencies.length > 0 ?
+      currencies.length > 0 && rates ?
       currencies.map((curr, index) => renderCurrency(curr, index))
       : null
     );
